@@ -20,7 +20,7 @@ bob install stable
 bob use stable 
 
 # switch to zsh and install oh-my-zsh + plugins and apply dotfiles
-yay -S stow
+yay -S stow --noconfirm
 git clone https://github.com/Nuznhy/dotfiles.git
 cd dotfiles
 stow -t ~ */
@@ -34,7 +34,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 # Essentials
 yay -S telegram-desktop --noconfirm
 yay -S spotify --noconfirm
-yay -S steam --noconfirm
 yay -S discord --noconfirm
 yay -S nvidia-settings --noconfirm
 yay -S nautilus --noconfirm
