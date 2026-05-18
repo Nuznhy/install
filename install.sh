@@ -25,6 +25,7 @@ git clone https://github.com/Nuznhy/dotfiles.git
 cd dotfiles
 stow -t ~ */
 cd ..
+source .zshrc
 
 yay -S zsh --noconfirm
 yay -S ttf-meslo-nerd-font-powerlevel10k --noconfirm
@@ -37,8 +38,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # install nodejs, nvm (node version manager), yarn
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-nvm install 22
-npm install -g yarn
+# nvm install 22
+# npm install -g yarn
 
 # Essentials
 yay -S telegram-desktop --noconfirm
